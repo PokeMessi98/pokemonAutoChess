@@ -274,7 +274,7 @@ export default class AnimationManager {
         repeat: shouldLoop ? -1 : 0
       })
     } catch (err) {
-      logger.warn(`Can't play animation ${animation} for ${entity.name}`, err)
+      logger.warn(`Can't play animation ${animation} for ${entity?.name}`, err)
     }
   }
 
@@ -283,7 +283,7 @@ export default class AnimationManager {
     animation: AnimationType,
     config: { flip?: boolean; repeat?: number; lock?: boolean } = {}
   ) {
-    if (entity.animationLocked) return
+    if (entity.animationLocked || !entity.sprite?.anims) return
 
     const orientation = config.flip
       ? OrientationFlip[entity.orientation]

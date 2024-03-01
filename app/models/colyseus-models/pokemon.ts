@@ -5115,7 +5115,6 @@ function updateCastform(pokemon: Pokemon, weather: Weather, player: Player) {
   player.board.delete(pokemon.id)
   player.board.set(newPokemon.id, newPokemon)
   player.updateSynergies()
-  player.effects.update(player.synergies, player.board)
 }
 
 export class Castform extends Pokemon {
@@ -8021,6 +8020,7 @@ export class TypeNull extends Pokemon {
   range = 1
   skill = Ability.RKS_SYSTEM
   attackSprite = AttackSprite.NORMAL_MELEE
+  passive = Passive.TYPE_NULL
 }
 
 export class SilvallyFire extends Pokemon {
@@ -11702,11 +11702,11 @@ export class Toxel extends Pokemon {
   rarity = Rarity.RARE
   evolution = Pkm.TOXTRICITY
   stars = 1
-  hp = 90
-  atk = 10
+  hp = 80
+  atk = 8
   def = 2
   speDef = 2
-  maxPP = 100
+  maxPP = 90
   range = 1
   skill = Ability.OVERDRIVE
   attackSprite = AttackSprite.ELECTRIC_MELEE
@@ -11721,11 +11721,11 @@ export class Toxtricity extends Pokemon {
   ])
   rarity = Rarity.RARE
   stars = 2
-  hp = 200
-  atk = 23
-  def = 4
-  speDef = 4
-  maxPP = 100
+  hp = 160
+  atk = 21
+  def = 3
+  speDef = 3
+  maxPP = 90
   range = 1
   skill = Ability.OVERDRIVE
   attackSprite = AttackSprite.ELECTRIC_MELEE
@@ -11857,8 +11857,8 @@ export class Kangaskhan extends Pokemon {
   ])
   rarity = Rarity.UNIQUE
   stars = 3
-  hp = 240
-  atk = 18
+  hp = 200
+  atk = 16
   def = 4
   speDef = 4
   maxPP = 100
@@ -11907,7 +11907,7 @@ export class Ursaluna extends Pokemon {
   speDef = 4
   maxPP = 100
   range = 1
-  skill = Ability.FURY_SWIPES
+  skill = Ability.DEFAULT //Ability.FURY_SWIPES
   attackSprite = AttackSprite.NORMAL_MELEE
 }
 
@@ -11918,8 +11918,8 @@ export class Aipom extends Pokemon {
   evolution = Pkm.AMBIPOM
   hp = 70
   atk = 7
-  def = 4
-  speDef = 4
+  def = 2
+  speDef = 2
   maxPP = 80
   range = 1
   skill = Ability.TICKLE
@@ -11932,8 +11932,8 @@ export class Ambipom extends Pokemon {
   stars = 2
   hp = 130
   atk = 14
-  def = 2
-  speDef = 2
+  def = 4
+  speDef = 4
   maxPP = 80
   range = 1
   skill = Ability.TICKLE

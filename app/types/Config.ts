@@ -126,7 +126,7 @@ export const RarityColor: { [key in Rarity]: string } = {
 }
 
 export const BoosterRarityProbability: { [key in Rarity]: number } = {
-  [Rarity.COMMON]: 0.15,
+  [Rarity.COMMON]: 0.12,
   [Rarity.UNCOMMON]: 0.2,
   [Rarity.RARE]: 0.2,
   [Rarity.EPIC]: 0.15,
@@ -134,7 +134,7 @@ export const BoosterRarityProbability: { [key in Rarity]: number } = {
   [Rarity.UNIQUE]: 0.08,
   [Rarity.LEGENDARY]: 0.05,
   [Rarity.HATCH]: 0.1,
-  [Rarity.SPECIAL]: 0
+  [Rarity.SPECIAL]: 0.03
 }
 
 export const DITTO_RATE = 0.005
@@ -240,7 +240,8 @@ export const UniqueShop = new Array<PkmProposition>(
   Pkm.CYCLIZAR,
   Pkm.MINIOR,
   Pkm.MORPEKO,
-  Pkm.TYPE_NULL
+  Pkm.TYPE_NULL,
+  Pkm.KANGASKHAN
 )
 
 export const LegendaryShop = new Array<PkmProposition>(
@@ -335,7 +336,7 @@ export const FishRarityProbability: {
   }
 }
 
-export const MAX_PLAYERS_PER_LOBBY = 8
+export const MAX_PLAYERS_PER_GAME = 8
 
 export const DEFAULT_ATK_SPEED = 0.75
 export const DEFAULT_CRIT_CHANCE = 10
@@ -955,8 +956,7 @@ export const DTEF_TILESET_HEIGHT = 8
 export const DTEF_TILESET_TILE_WIDTH = 24
 
 export const SCRIBBLE_LOBBY_CRON = "0 0 0-20/4 * * *" // every four hours from 00h to 20h
-export const GREATBALL_RANKED_LOBBY_CRON = "0 0 2-22/4 * * *" // every four hours from 2h to 22h
-export const ULTRABALL_RANKED_LOBBY_CRON = "0 0 21 * * 7" // on Sunday at 21h
+export const RANKED_LOBBY_CRON = "0 0 2-22/4 * * *" // every four hours from 2h to 22h
 
 export const DUST_PER_BOOSTER = 50
 export const DUST_PER_SHINY = 250
