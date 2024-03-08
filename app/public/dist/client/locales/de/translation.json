@@ -298,7 +298,8 @@
     "FURY_SWIPES": "Kratzfurie",
     "TICKLE": "Spaßkanone",
     "AROMATHERAPY": "Aromakur",
-    "DETECT": "Scanner"
+    "DETECT": "Scanner",
+    "SPACIAL_REND": "Raumschlag"
   },
   "pkm": {
     "DEFAULT": "MissingNo.",
