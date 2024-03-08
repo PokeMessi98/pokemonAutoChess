@@ -287,7 +287,18 @@
     "SHED_TAIL": "Schwanzabwurf",
     "KOWTOW_CLEAVE": "Kniefallspalter",
     "SHIELDS_DOWN": "Schildbruch",
-    "SHIELDS_UP": "Schildaufbereitung"
+    "SHIELDS_UP": "Schildaufbereitung",
+    "SANDSEAR_STORM": "Wüstenorkan ",
+    "WILDBOLT_STORM": "Donnerorkan",
+    "BLEAKWIND_STORM": "Polarorkan",
+    "SPRINGTIDE_STORM": "Frühlingsorkan",
+    "AURA_WHEEL": "Aura-Rad",
+    "AURA_WHEEL_HANGRY": "Aura-Rad",
+    "LICK": "Schlecker",
+    "FURY_SWIPES": "Kratzfurie",
+    "TICKLE": "Spaßkanone",
+    "AROMATHERAPY": "Aromakur",
+    "DETECT": "Scanner"
   },
   "pkm": {
     "DEFAULT": "MissingNo.",
